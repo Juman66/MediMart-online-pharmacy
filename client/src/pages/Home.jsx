@@ -1,8 +1,8 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import SearchBar from "../components/SearchBar";
-import Categories from "../components/Categories";
-import FeaturedMedicines from "../components/FeaturedMedicines";
+import Navbar from "../components/layout/Navbar/Navbar";
+import Hero from "../components/home/Hero/Hero";
+import SearchBar from "../components/home/SearchBar/SearchBar";
+import Categories from "../components/home/Categories/Categories";
+import FeaturedMedicines from "../components/home/FeaturedMedicines/FeaturedMedicines";
 
 function Home() {
   return (

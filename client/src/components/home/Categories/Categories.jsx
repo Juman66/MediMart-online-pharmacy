@@ -1,4 +1,4 @@
-import "../styles/categories.css";
+import "./Categories.css";
 
 function Categories() {
   return (

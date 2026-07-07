@@ -1,4 +1,4 @@
-import "../styles/featured.css";
+import "./FeaturedMedicines.css";
 
 function FeaturedMedicines() {
   return (
