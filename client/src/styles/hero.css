@@ -1,0 +1,55 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: #f8fbff;
+    min-height: 80vh;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.shop-btn,
+.contact-btn {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shop-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.contact-btn {
+    background: white;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.hero-image img {
+    width: 500px;
+    border-radius: 20px;
+}

@@ -1,0 +1,54 @@
+.featured{
+    padding:80px;
+    background:white;
+    text-align:center;
+}
+
+.featured h2{
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.medicine-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.medicine-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.medicine-card:hover{
+    transform:translateY(-8px);
+}
+
+.medicine-card img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+}
+
+.price{
+    color:#2563eb;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.rating{
+    margin-bottom:20px;
+}
+
+.medicine-card button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}

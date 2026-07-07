@@ -1,20 +1,17 @@
 import Navbar from "../components/Navbar";
-import "../styles/home.css";
+import Hero from "../components/Hero";
+import SearchBar from "../components/SearchBar";
+import Categories from "../components/Categories";
+import FeaturedMedicines from "../components/FeaturedMedicines";
 
 function Home() {
   return (
     <>
       <Navbar />
-
-      <section className="hero">
-
-        <h1>Welcome to MediMart</h1>
-
-        <p>
-          Your Trusted Online Pharmacy
-        </p>
-
-      </section>
+      <Hero />
+      <SearchBar />
+      <Categories />
+      <FeaturedMedicines />
     </>
   );
 }
