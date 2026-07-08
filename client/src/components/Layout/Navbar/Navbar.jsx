@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
+import { FaNotesMedical, FaShoppingCart } from "react-icons/fa";
+import { HiArrowRight } from "react-icons/hi";
 import "./Navbar.css";
+import logo from "../../../assets/images/logo/medimart-logo.png";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">
-        <h2>MediMart</h2>
-      </div>
+<div className="logo">
+    <img
+        src={logo}
+        alt="MediMart Logo"
+        className="logo-image"
+    />
+</div>
 
       <ul className="nav-links">
         <li>
@@ -30,12 +37,18 @@ function Navbar() {
         </li>
 
         <li>
-          <Link to="/cart">Cart</Link>
+        <Link to="/cart" className="cart-link">
+        <FaShoppingCart />
+        <span>Cart</span>
+        </Link>
         </li>
       </ul>
 
       <Link to="/login">
-        <button className="login-btn">Login</button>
+        <button className="login-btn">
+          Login
+          <HiArrowRight className="arrow-icon" />
+        </button>
       </Link>
     </nav>
   );

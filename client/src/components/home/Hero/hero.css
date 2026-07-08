@@ -2,54 +2,249 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px;
-    background: #f8fbff;
-    min-height: 80vh;
+    gap: 90px;
+    padding: 72px 8%;
+    min-height: 90vh;
+
+    background: transparent;
 }
 
+/* ================= Left Side ================= */
+
 .hero-content {
-    width: 50%;
+    flex: 1;
+    max-width: 650px;
+     display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    flex:1;
+
+    max-width:650px;
 }
 
 .hero-content h1 {
-    font-size: 55px;
-    color: #0f172a;
-    margin-bottom: 20px;
+    font-size: 54px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--dark);
+    margin-bottom: 24px;
 }
 
-.hero-content p {
-    font-size: 20px;
-    color: #555;
-    line-height: 1.6;
+.hero-content h1 span {
+    color: var(--primary);
+    position:relative;
+    font-weight:800;
 }
 
-.hero-buttons {
-    margin-top: 35px;
-    display: flex;
-    gap: 20px;
+.hero-content p{
+
+    font-size:19px;
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    max-width:560px;
+
+    margin:25px 0;
+
 }
+
+/* ================= Buttons ================= */
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+    margin-bottom:35px;
+}
+/* Common Button Style */
 
 .shop-btn,
-.contact-btn {
-    padding: 14px 30px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
+.contact-btn{
+
+    padding:16px 34px;
+
+    border-radius:22px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
 }
 
-.shop-btn {
-    background: #2563eb;
-    color: white;
+.shop-btn{
+
+    border:none;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #006D77,
+        #0D8B97
+    );
+
+    box-shadow:
+    0 15px 35px rgba(0,109,119,.25);
+
 }
 
-.contact-btn {
-    background: white;
-    border: 2px solid #2563eb;
-    color: #2563eb;
+.shop-btn:hover{
+
+    transform:
+    translateY(-4px)
+    scale(1.03);
+
 }
 
-.hero-image img {
-    width: 500px;
-    border-radius: 20px;
+.contact-btn{
+
+    background:white;
+
+    color:#006D77;
+
+    border:2px solid #006D77;
+
+}
+
+.contact-btn:hover{
+
+    background:#006D77;
+
+    color:white;
+
+}
+
+/* ================= Hero Features ================= */
+
+
+
+.hero-features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.hero-features > span{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.hero-features > span:last-child{
+    margin-bottom: 0;
+}
+
+.feature-icon{
+    color: var(--primary);
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* ================= Right Side ================= */
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor-image{
+
+    width:100%;
+
+    max-width:520px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+
+/* ================= Animation ================= */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+.doctor-card{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 520px;
+
+    padding: 30px;
+
+    border-radius: 32px;
+
+    background: rgba(255,255,255,.75);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 25px 60px rgba(0,109,119,.15);
+
+    overflow: hidden;
+}
+.doctor-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    background:rgba(131,197,190,.35);
+
+    border-radius:50%;
+
+    top:-80px;
+
+    right:-60px;
+
+    filter:blur(30px);
+
+    z-index:0;
+
+}
+
+.doctor-card img{
+
+    position:relative;
+
+    z-index:2;
+
 }

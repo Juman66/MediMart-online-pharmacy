@@ -1,56 +1,161 @@
 import "./FeaturedMedicines.css";
+import { FaHeart, FaStar, FaShoppingCart } from "react-icons/fa";
+
+import paracetamol from "../../../assets/images/medicines/paracetamol.png";
+import crocin from "../../../assets/images/medicines/crocin.png";
+import vitaminC from "../../../assets/images/medicines/vitamin-c.png";
 
 function FeaturedMedicines() {
   return (
     <section className="featured">
 
-      <h2>Featured Medicines</h2>
+      <h2>Featured Medicines & Health Essentials</h2>
+
+      <p className="featured-subtitle">
+        Shop our most trusted medicines and wellness essentials with exclusive discounts and quick doorstep delivery.
+      </p>
 
       <div className="medicine-grid">
 
+        {/* Card 1 */}
+
         <div className="medicine-card">
+
+          <div className="discount-badge">
+            15% OFF
+          </div>
+
+          <button className="wishlist-btn">
+            <FaHeart />
+          </button>
+
           <img
-            src="https://via.placeholder.com/180x180?text=Medicine"
+            src={paracetamol}
             alt="Paracetamol"
           />
 
-          <h3>Paracetamol</h3>
+          <h3>Paracetamol 500mg Tablets</h3>
 
-          <p className="price">₹25</p>
+          <p className="medicine-type">
+            Fast Pain & Fever Relief
+          </p>
 
-          <p className="rating">⭐⭐⭐⭐⭐</p>
+          <div className="rating">
 
-          <button>Add to Cart</button>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+
+            <span>(124 Reviews)</span>
+
+          </div>
+
+          <p className="price">
+            ₹25
+            <span className="old-price">₹30</span>
+          </p>
+
+          <button className="featured-cart-btn">
+            <FaShoppingCart />
+            <span>Add to Cart</span>
+          </button>
+
         </div>
 
+        {/* Card 2 */}
+
         <div className="medicine-card">
+
+          <div className="discount-badge">
+            12% OFF
+          </div>
+
+          <button className="wishlist-btn">
+            <FaHeart />
+          </button>
+
           <img
-            src="https://via.placeholder.com/180x180?text=Medicine"
+            src={crocin}
             alt="Crocin"
           />
 
-          <h3>Crocin</h3>
+          <h3>Crocin Advance</h3>
 
-          <p className="price">₹45</p>
+          <p className="medicine-type">
+            Cold & Fever Relief
+          </p>
 
-          <p className="rating">⭐⭐⭐⭐☆</p>
+          <div className="rating">
 
-          <button>Add to Cart</button>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+
+            <span>(96 Reviews)</span>
+
+          </div>
+
+          <p className="price">
+            ₹45
+            <span className="old-price">₹50</span>
+          </p>
+
+          <button className="featured-cart-btn">
+            <FaShoppingCart />
+            <span>Add to Cart</span>
+          </button>
+
         </div>
 
+        {/* Card 3 */}
+
         <div className="medicine-card">
+
+          <div className="discount-badge">
+            18% OFF
+          </div>
+
+          <button className="wishlist-btn">
+            <FaHeart />
+          </button>
+
           <img
-            src="https://via.placeholder.com/180x180?text=Medicine"
+            src={vitaminC}
             alt="Vitamin C"
           />
 
-          <h3>Vitamin C</h3>
+          <h3>Vitamin C 1000mg</h3>
 
-          <p className="price">₹120</p>
+          <p className="medicine-type">
+            Daily Immunity Support
+          </p>
 
-          <p className="rating">⭐⭐⭐⭐⭐</p>
+          <div className="rating">
 
-          <button>Add to Cart</button>
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+
+            <span>(218 Reviews)</span>
+
+          </div>
+
+          <p className="price">
+            ₹120
+            <span className="old-price">₹150</span>
+          </p>
+
+          <button className="featured-cart-btn">
+            <FaShoppingCart />
+            <span>Add to Cart</span>
+          </button>
+
         </div>
 
       </div>
