@@ -1,0 +1,21 @@
+import "./MedicineFilter.css";
+
+function MedicineFilter() {
+  return (
+    <section className="medicine-filter">
+
+      <button>All</button>
+
+      <button>Tablets</button>
+
+      <button>Syrups</button>
+
+      <button>Capsules</button>
+
+      <button>Vitamins</button>
+
+    </section>
+  );
+}
+
+export default MedicineFilter;

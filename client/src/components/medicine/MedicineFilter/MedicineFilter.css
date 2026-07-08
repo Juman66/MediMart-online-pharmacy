@@ -1,0 +1,17 @@
+.medicine-filter{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:35px;
+    background:#f8fafc;
+    flex-wrap:wrap;
+}
+
+.medicine-filter button{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
