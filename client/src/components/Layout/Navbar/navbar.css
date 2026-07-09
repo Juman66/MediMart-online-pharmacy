@@ -1,157 +1,155 @@
-.navbar{
+/* Navbar */
+.navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    padding:20px 72px;
+    padding: 20px 72px;
 
-    background:rgba(255,255,255,.85);
-    backdrop-filter:blur(16px);
+background: rgba(255,255,255,.45);
 
-    border-bottom:1px solid rgba(0,109,119,.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 
-    box-shadow:0 12px 35px rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* ================= Logo ================= */
+/* Logo */
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.logo-icon{
-    font-size:32px;
-    color:var(--primary);
+.logo-icon {
+    font-size: 32px;
+    color: var(--primary);
 }
 
-.logo h2{
-    font-size:30px;
-    color:var(--primary);
-    font-weight:700;
-    letter-spacing:.5px;
-}
-.logo-image{
-    height:65px;
-    width:auto;
+.logo h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: .5px;
+
+    color: var(--primary);
 }
 
-/* ================= Navigation ================= */
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:38px;
-    list-style:none;
+.logo-image {
+    width: auto;
+    height: 110px;
 }
 
-.nav-links a{
-    position:relative;
-    color:var(--dark);
-    font-weight:600;
-    transition:var(--transition);
+/* Navigation */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+
+    list-style: none;
 }
 
-.nav-links a:hover{
-    color:var(--primary);
+.nav-links a {
+    position: relative;
+
+    color: var(--dark);
+    font-weight: 600;
+
+    transition: .3s;
 }
 
-.nav-links a::after{
+.nav-links a:hover {
+    color: var(--primary);
+}
 
-    content:"";
+.nav-links a::after {
+    content: "";
 
-    position:absolute;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
 
-    left:0;
-    bottom:-8px;
+    width: 0;
+    height: 3px;
 
-    width:0;
+    border-radius: 20px;
 
-    height:3px;
-
-    border-radius:20px;
-
-    background:linear-gradient(
+    background: linear-gradient(
         90deg,
         var(--primary),
         var(--secondary)
     );
 
-    transition:.35s;
+    transition: .35s;
 }
 
-.nav-links a:hover::after{
-    width:100%;
+.nav-links a:hover::after {
+    width: 100%;
 }
 
-/* ================= Cart ================= */
+/* Cart */
 
-.cart-link{
-    display:flex;
-    align-items:center;
-    gap:8px;
+.cart-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-/* ================= Login Button ================= */
+/* Login Button */
 
-.login-btn{
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-    display:flex;
-    align-items:center;
-    gap:10px;
+    padding: 14px 28px;
 
-    padding:14px 28px;
+    color: white;
+    font-weight: 600;
 
-    border:none;
+background: linear-gradient(
+    135deg,
+    #0F6CBD,
+    #14B8A6,
+    #2DD4BF
+);
+    border: none;
+    border-radius: 999px;
 
-    border-radius:999px;
+    box-shadow: 0 12px 25px rgba(0, 109, 119, .25);
 
-    color:white;
-
-    font-weight:600;
-
-    background:linear-gradient(
-        135deg,
-        var(--primary),
-        var(--primary-light)
-    );
-
-    box-shadow:
-    0 12px 25px rgba(0,109,119,.25);
-
-    transition:var(--transition);
+    transition: var(--transition);
 }
 
 .login-btn:hover{
 
-    transform:
-    translateY(-3px)
-    scale(1.03);
+    transform: translateY(-3px) scale(1.03);
+
+background: linear-gradient(
+    135deg,
+    #2563EB,
+    #60A5FA,
+    #93C5FD
+);;
 
     box-shadow:
-    0 18px 40px rgba(0,109,119,.35);
+        0 18px 40px rgba(15,108,189,.30);
+
 }
 
-.arrow-icon{
+/* Arrow Icon */
 
-    transition:.3s;
+.arrow-icon {
+    transition: .3s;
 }
 
-.login-btn:hover .arrow-icon{
-
-    transform:translateX(5px);
-}
-.nav-links a{
-    transition:.3s;
-}
-
-.nav-links a:hover{
-
-    color:var(--primary);
-
+.login-btn:hover .arrow-icon {
+    transform: translateX(5px);
 }

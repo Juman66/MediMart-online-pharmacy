@@ -1,41 +1,29 @@
-.fade-up{
+/* Fade Up Animation */
 
-animation:fadeUp .8s ease;
+.fade-up {
+    animation: fadeUp .8s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 }
 
-@keyframes fadeUp{
+/* Hover Lift */
 
-from{
-
-opacity:0;
-
-transform:translateY(30px);
-
+.hover-lift {
+    transition: var(--transition);
 }
 
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-.hover-lift{
-
-transition:var(--transition);
-
-}
-
-.hover-lift:hover{
-
-transform:
-
-translateY(-8px)
-
-scale(1.02);
-
+.hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
 }

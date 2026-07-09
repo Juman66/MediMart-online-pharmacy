@@ -2,268 +2,198 @@
    Categories Section
 ========================= */
 
-.categories{
-    padding:72px 8%;
-    background:transparent;
+.categories {
+    padding: 72px 8%;
+    background: transparent;
 }
 
-.categories h2{
-    text-align:center;
-    font-size:52px;
-    font-weight:800;
-    color:#1F2937;
-    margin-bottom:18px;
+.categories h2 {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 18px;
 }
 
-.categories-subtitle{
-    text-align:center;
-    color:#6B7280;
-    font-size:18px;
-    margin-bottom:55px;
+.categories-subtitle {
+    text-align: center;
+    color: #6B7280;
+    font-size: 18px;
+    margin-bottom: 55px;
 }
 
-.category-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:32px;
-}
-
-/* =========================
-   Card
-========================= */
-
-.category-card{
-
-    position:relative;
-
-    border-radius:22px;
-
-    padding:38px 30px;
-
-    text-align:center;
-
-    transition:.35s;
-
-    overflow:hidden;
-
-    cursor:pointer;
-
-    box-shadow:
-    0 15px 40px rgba(0,0,0,.06);
-
-}
-
-/* top gradient accent */
-
-.category-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:0;
-
-    width:100%;
-
-    height:6px;
-
-}
-
-/* Hover */
-
-.category-card:hover{
-
-    transform:
-    translateY(-10px);
-
-    box-shadow:
-    0 25px 45px rgba(0,0,0,.12);
-
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
 }
 
 /* =========================
-   Icons
+   Category Card
 ========================= */
 
-.category-icon{
-
-    font-size:58px;
-
-    margin-bottom:22px;
-
-    transition:.35s;
-
+.category-card {
+    position: relative;
+    padding: 38px 30px;
+    border-radius: 22px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .35s;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .06);
 }
 
-.category-card:hover .category-icon{
+/* Top Accent Line */
 
-    transform:
-    rotate(10deg)
-    scale(1.12);
+.category-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+}
 
+/* Hover Effect */
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .12);
 }
 
 /* =========================
-   Text
+   Category Icon
 ========================= */
 
-.category-card h3{
-
-    font-size:28px;
-
-    margin-bottom:10px;
-
-    color:#1F2937;
-
+.category-icon {
+    font-size: 58px;
+    margin-bottom: 22px;
+    transition: .35s;
 }
 
-.category-card p{
-
-    color:#6B7280;
-
-    margin-bottom:22px;
-
-    font-size:16px;
-
-}
-
-.category-card span{
-
-    font-weight:700;
-
-    color:#0F766E;
-
-    font-size:17px;
-
-    transition:.3s;
-
-}
-
-.category-card:hover span{
-
-    letter-spacing:1px;
-
+.category-card:hover .category-icon {
+    transform: rotate(10deg) scale(1.12);
 }
 
 /* =========================
-   Individual Card Colors
+   Category Text
 ========================= */
 
-.pain{
-
-    background:#EEF7FF;
-
+.category-card h3 {
+    font-size: 28px;
+    color: #1F2937;
+    margin-bottom: 10px;
 }
 
-.pain::before{
-
-    background:linear-gradient(to right,#2563EB,#60A5FA);
-
+.category-card p {
+    color: #6B7280;
+    font-size: 16px;
+    margin-bottom: 22px;
 }
 
-.pain .category-icon{
-
-    color:#2563EB;
-
+.category-card span {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0F766E;
+    transition: .3s;
 }
 
-/* --------------------- */
-
-.cold{
-
-    background:#F5F3FF;
-
+.category-card:hover span {
+    letter-spacing: 1px;
 }
 
-.cold::before{
+/* =========================
+   Pain Relief
+========================= */
 
-    background:linear-gradient(to right,#7C3AED,#C084FC);
-
+.pain {
+    background: #EEF7FF;
 }
 
-.cold .category-icon{
-
-    color:#7C3AED;
-
+.pain::before {
+    background: linear-gradient(to right, #2563EB, #60A5FA);
 }
 
-/* --------------------- */
-
-.heart{
-
-    background:#FFF1F2;
-
+.pain .category-icon {
+    color: #2563EB;
 }
 
-.heart::before{
+/* =========================
+   Cold & Flu
+========================= */
 
-    background:linear-gradient(to right,#E11D48,#FB7185);
-
+.cold {
+    background: #F5F3FF;
 }
 
-.heart .category-icon{
-
-    color:#E11D48;
-
+.cold::before {
+    background: linear-gradient(to right, #7C3AED, #C084FC);
 }
 
-/* --------------------- */
-
-.diabetes{
-
-    background:#FFF7ED;
-
+.cold .category-icon {
+    color: #7C3AED;
 }
 
-.diabetes::before{
+/* =========================
+   Heart Care
+========================= */
 
-    background:linear-gradient(to right,#EA580C,#FB923C);
-
+.heart {
+    background: #FFF1F2;
 }
 
-.diabetes .category-icon{
-
-    color:#EA580C;
-
+.heart::before {
+    background: linear-gradient(to right, #E11D48, #FB7185);
 }
 
-/* --------------------- */
-
-.skin{
-
-    background:#F0FDF4;
-
+.heart .category-icon {
+    color: #E11D48;
 }
 
-.skin::before{
+/* =========================
+   Diabetes Care
+========================= */
 
-    background:linear-gradient(to right,#16A34A,#4ADE80);
-
+.diabetes {
+    background: #FFF7ED;
 }
 
-.skin .category-icon{
-
-    color:#16A34A;
-
+.diabetes::before {
+    background: linear-gradient(to right, #EA580C, #FB923C);
 }
 
-/* --------------------- */
-
-.vitamin{
-
-    background:#ECFDF5;
-
+.diabetes .category-icon {
+    color: #EA580C;
 }
 
-.vitamin::before{
+/* =========================
+   Skin Care
+========================= */
 
-    background:linear-gradient(to right,#0F766E,#14B8A6);
-
+.skin {
+    background: #F0FDF4;
 }
 
-.vitamin .category-icon{
+.skin::before {
+    background: linear-gradient(to right, #16A34A, #4ADE80);
+}
 
-    color:#0F766E;
+.skin .category-icon {
+    color: #16A34A;
+}
 
+/* =========================
+   Vitamins
+========================= */
+
+.vitamin {
+    background: #ECFDF5;
+}
+
+.vitamin::before {
+    background: linear-gradient(to right, #0F766E, #14B8A6);
+}
+
+.vitamin .category-icon {
+    color: #0F766E;
 }

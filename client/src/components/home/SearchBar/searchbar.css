@@ -1,13 +1,17 @@
+/* Search Section */
+
 .search-section {
-    text-align: center;
     padding: 70px 20px;
-    background: white;
+    text-align: center;
+    background: transparent;
 }
 
 .search-section h2 {
     font-size: 36px;
     margin-bottom: 30px;
 }
+
+/* Search Box */
 
 .search-box {
     display: flex;
@@ -17,33 +21,82 @@
 }
 
 .search-box input {
+
     width: 420px;
+
     padding: 15px;
+
     font-size: 16px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
+
+    border: 2px solid #E2E8F0;
+
+    border-radius: 12px;
+
+    background: white;
+
+    transition: .3s ease;
+
+}
+.search-box input:focus {
+
+    outline: none;
+
+    border-color: #14B8A6;
+
+    box-shadow: 0 0 0 8px rgba(20,184,166,.15);
+
 }
 
 .search-box button {
+
     padding: 15px 30px;
+
     border: none;
-    background: #2563eb;
-    color: white;
+
     border-radius: 10px;
+
+    color: white;
+
     cursor: pointer;
+
+background: linear-gradient(
+    135deg,
+    #0F766E,
+    #14B8A6,
+    #2DD4BF
+);
+
+    transition: .3s ease;
 }
+
+.search-box button:hover {
+
+    transform: translateY(-3px);
+background: linear-gradient(
+    135deg,
+    #2563EB,
+    #3B82F6,
+    #60A5FA
+);
+
+    box-shadow: 0 12px 30px rgba(15,108,189,.25);
+}
+
+/* Popular Searches */
 
 .popular-searches {
     display: flex;
     justify-content: center;
-    gap: 15px;
     align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .popular-searches p {
-    background: #eef4ff;
     padding: 8px 15px;
+
+    background: #eef4ff;
     border-radius: 20px;
+
     cursor: pointer;
 }

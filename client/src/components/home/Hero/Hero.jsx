@@ -1,77 +1,82 @@
 import "./hero.css";
-import doctorImage from "../../../assets/images/hero/doctor.png";
 import { FaCheckCircle } from "react-icons/fa";
 
+import doctorImage from "../../../assets/images/hero/doctor.png";
+
 function Hero() {
-  return (
-    <section className="hero">
+    return (
+        <section className="hero">
 
-      {/* Left Side */}
-      <div className="hero-content">
+            {/* Hero Content */}
 
-        <h1>
-          Your <span>Health</span>, <br />
-          Our Priority
-        </h1>
+            <div className="hero-content">
 
-        <p>
-          Buy genuine medicines online with doorstep delivery,
-          expert healthcare support, and trusted pharmacy services
-          across India.
-        </p>
+                <h1>
+                    Your <span>Health</span>, <br />
+                    Our Priority
+                </h1>
 
-        {/* Buttons */}
-        <div className="hero-buttons">
+                <p>
+                    Buy genuine medicines online with doorstep delivery,
+                    expert healthcare support, and trusted pharmacy services
+                    across India.
+                </p>
 
-          <button className="shop-btn">
-            Shop Medicines
-          </button>
+                {/* Buttons */}
 
-          <button className="contact-btn">
-            Consult Doctor
-          </button>
+                <div className="hero-buttons">
 
-        </div>
+                    <button className="shop-btn">
+                        Shop Medicines
+                    </button>
 
-        {/* Features */}
-<div className="hero-features">
+                    <button className="contact-btn">
+                        Consult Doctor
+                    </button>
 
-  <span>
-    <FaCheckCircle className="feature-icon" />
-    <span>100% Genuine Medicines</span>
-  </span>
+                </div>
 
-  <span>
-    <FaCheckCircle className="feature-icon" />
-    <span>Fast Delivery</span>
-  </span>
+                {/* Features */}
 
-  <span>
-    <FaCheckCircle className="feature-icon" />
-    <span>Secure Payments</span>
-  </span>
+                <div className="hero-features">
 
-</div>
+                    <span>
+                        <FaCheckCircle className="feature-icon" />
+                        <span>100% Genuine Medicines</span>
+                    </span>
 
-      </div>
+                    <span>
+                        <FaCheckCircle className="feature-icon" />
+                        <span>Fast Delivery</span>
+                    </span>
 
-      {/* Right Side */}
-      <div className="hero-image">
+                    <span>
+                        <FaCheckCircle className="feature-icon" />
+                        <span>Secure Payments</span>
+                    </span>
 
-        <div className="doctor-card">
+                </div>
 
-          <img
-            src={doctorImage}
-            alt="Doctor"
-            className="doctor-image"
-          />
+            </div>
 
-        </div>
+            {/* Hero Image */}
 
-      </div>
+            <div className="hero-image">
 
-    </section>
-  );
+                <div className="doctor-card">
+
+                    <img
+                        src={doctorImage}
+                        alt="Doctor"
+                        className="doctor-image"
+                    />
+
+                </div>
+
+            </div>
+
+        </section>
+    );
 }
 
 export default Hero;

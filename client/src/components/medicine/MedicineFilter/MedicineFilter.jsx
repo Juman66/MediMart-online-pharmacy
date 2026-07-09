@@ -1,21 +1,23 @@
 import "./MedicineFilter.css";
 
 function MedicineFilter() {
-  return (
-    <section className="medicine-filter">
+    return (
+        <section className="medicine-filter">
 
-      <button>All</button>
+            {/* Filter Buttons */}
 
-      <button>Tablets</button>
+            <button>All</button>
 
-      <button>Syrups</button>
+            <button>Tablets</button>
 
-      <button>Capsules</button>
+            <button>Syrups</button>
 
-      <button>Vitamins</button>
+            <button>Capsules</button>
 
-    </section>
-  );
+            <button>Vitamins</button>
+
+        </section>
+    );
 }
 
 export default MedicineFilter;

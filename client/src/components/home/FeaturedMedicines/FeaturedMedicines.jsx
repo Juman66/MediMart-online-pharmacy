@@ -6,162 +6,157 @@ import crocin from "../../../assets/images/medicines/crocin.png";
 import vitaminC from "../../../assets/images/medicines/vitamin-c.png";
 
 function FeaturedMedicines() {
-  return (
-    <section className="featured">
+    return (
+        <section className="featured">
 
-      <h2>Featured Medicines & Health Essentials</h2>
+            <h2>Featured Medicines & Health Essentials</h2>
 
-      <p className="featured-subtitle">
-        Shop our most trusted medicines and wellness essentials with exclusive discounts and quick doorstep delivery.
-      </p>
+            <p className="featured-subtitle">
+                Shop our most trusted medicines and wellness essentials with
+                exclusive discounts and quick doorstep delivery.
+            </p>
 
-      <div className="medicine-grid">
+            <div className="medicine-grid">
 
-        {/* Card 1 */}
+                {/* Paracetamol */}
 
-        <div className="medicine-card">
+                <div className="medicine-card">
 
-          <div className="discount-badge">
-            15% OFF
-          </div>
+                    <div className="discount-badge">
+                        15% OFF
+                    </div>
 
-          <button className="wishlist-btn">
-            <FaHeart />
-          </button>
+                    <button className="wishlist-btn">
+                        <FaHeart />
+                    </button>
 
-          <img
-            src={paracetamol}
-            alt="Paracetamol"
-          />
+                    <img
+                        src={paracetamol}
+                        alt="Paracetamol"
+                    />
 
-          <h3>Paracetamol 500mg Tablets</h3>
+                    <h3>Paracetamol 500mg Tablets</h3>
 
-          <p className="medicine-type">
-            Fast Pain & Fever Relief
-          </p>
+                    <p className="medicine-type">
+                        Fast Pain & Fever Relief
+                    </p>
 
-          <div className="rating">
+                    <div className="rating">
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
 
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
+                        <span>(124 Reviews)</span>
+                    </div>
 
-            <span>(124 Reviews)</span>
+                    <p className="price">
+                        ₹25
+                        <span className="old-price">₹30</span>
+                    </p>
 
-          </div>
+                    <button className="featured-cart-btn">
+                        <FaShoppingCart />
+                        <span>Add to Cart</span>
+                    </button>
 
-          <p className="price">
-            ₹25
-            <span className="old-price">₹30</span>
-          </p>
+                </div>
 
-          <button className="featured-cart-btn">
-            <FaShoppingCart />
-            <span>Add to Cart</span>
-          </button>
+                {/* Crocin */}
 
-        </div>
+                <div className="medicine-card">
 
-        {/* Card 2 */}
+                    <div className="discount-badge">
+                        12% OFF
+                    </div>
 
-        <div className="medicine-card">
+                    <button className="wishlist-btn">
+                        <FaHeart />
+                    </button>
 
-          <div className="discount-badge">
-            12% OFF
-          </div>
+                    <img
+                        src={crocin}
+                        alt="Crocin"
+                    />
 
-          <button className="wishlist-btn">
-            <FaHeart />
-          </button>
+                    <h3>Crocin Advance</h3>
 
-          <img
-            src={crocin}
-            alt="Crocin"
-          />
+                    <p className="medicine-type">
+                        Cold & Fever Relief
+                    </p>
 
-          <h3>Crocin Advance</h3>
+                    <div className="rating">
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
 
-          <p className="medicine-type">
-            Cold & Fever Relief
-          </p>
+                        <span>(96 Reviews)</span>
+                    </div>
 
-          <div className="rating">
+                    <p className="price">
+                        ₹45
+                        <span className="old-price">₹50</span>
+                    </p>
 
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
+                    <button className="featured-cart-btn">
+                        <FaShoppingCart />
+                        <span>Add to Cart</span>
+                    </button>
 
-            <span>(96 Reviews)</span>
+                </div>
 
-          </div>
+                {/* Vitamin C */}
 
-          <p className="price">
-            ₹45
-            <span className="old-price">₹50</span>
-          </p>
+                <div className="medicine-card">
 
-          <button className="featured-cart-btn">
-            <FaShoppingCart />
-            <span>Add to Cart</span>
-          </button>
+                    <div className="discount-badge">
+                        18% OFF
+                    </div>
 
-        </div>
+                    <button className="wishlist-btn">
+                        <FaHeart />
+                    </button>
 
-        {/* Card 3 */}
+                    <img
+                        src={vitaminC}
+                        alt="Vitamin C"
+                    />
 
-        <div className="medicine-card">
+                    <h3>Vitamin C 1000mg</h3>
 
-          <div className="discount-badge">
-            18% OFF
-          </div>
+                    <p className="medicine-type">
+                        Daily Immunity Support
+                    </p>
 
-          <button className="wishlist-btn">
-            <FaHeart />
-          </button>
+                    <div className="rating">
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
 
-          <img
-            src={vitaminC}
-            alt="Vitamin C"
-          />
+                        <span>(218 Reviews)</span>
+                    </div>
 
-          <h3>Vitamin C 1000mg</h3>
+                    <p className="price">
+                        ₹120
+                        <span className="old-price">₹150</span>
+                    </p>
 
-          <p className="medicine-type">
-            Daily Immunity Support
-          </p>
+                    <button className="featured-cart-btn">
+                        <FaShoppingCart />
+                        <span>Add to Cart</span>
+                    </button>
 
-          <div className="rating">
+                </div>
 
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
+            </div>
 
-            <span>(218 Reviews)</span>
-
-          </div>
-
-          <p className="price">
-            ₹120
-            <span className="old-price">₹150</span>
-          </p>
-
-          <button className="featured-cart-btn">
-            <FaShoppingCart />
-            <span>Add to Cart</span>
-          </button>
-
-        </div>
-
-      </div>
-
-    </section>
-  );
+        </section>
+    );
 }
 
 export default FeaturedMedicines;

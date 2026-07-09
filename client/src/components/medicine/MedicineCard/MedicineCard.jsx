@@ -1,50 +1,56 @@
 import "./MedicineCard.css";
 
 function MedicineCard(props) {
-  return (
-    <div className="medicine-card">
+    return (
+        <div className="medicine-card">
 
-      <div className="medicine-image">
+            {/* Medicine Image */}
 
-        <img
-          src="https://via.placeholder.com/200x200?text=Medicine"
-          alt="Medicine"
-        />
+            <div className="medicine-image">
 
-      </div>
+                <img
+                    src="https://via.placeholder.com/200x200?text=Medicine"
+                    alt="Medicine"
+                />
 
-      <div className="medicine-info">
+            </div>
 
-        <h3>Paracetamol 500mg</h3>
+            {/* Medicine Information */}
 
-        <p className="medicine-description">
-          Fast relief from fever and mild pain.
-        </p>
+            <div className="medicine-info">
 
-        <p className="medicine-price">
-          ₹25
-        </p>
+                <h3>Paracetamol 500mg</h3>
 
-        <p className="medicine-rating">
-          ⭐⭐⭐⭐⭐
-        </p>
+                <p className="medicine-description">
+                    Fast relief from fever and mild pain.
+                </p>
 
-        <div className="medicine-buttons">
+                <p className="medicine-price">
+                    ₹25
+                </p>
 
-          <button className="details-btn">
-            View Details
-          </button>
+                <p className="medicine-rating">
+                    ⭐⭐⭐⭐⭐
+                </p>
 
-          <button className="cart-btn">
-            Add to Cart
-          </button>
+                {/* Buttons */}
+
+                <div className="medicine-buttons">
+
+                    <button className="details-btn">
+                        View Details
+                    </button>
+
+                    <button className="cart-btn">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
 
         </div>
-
-      </div>
-
-    </div>
-  );
+    );
 }
 
 export default MedicineCard;

@@ -1,87 +1,87 @@
 import "./Categories.css";
 import {
-  FaCapsules,
-  FaNotesMedical,
-  FaHeartbeat,
-  FaTint,
-  FaPumpSoap,
-  FaLeaf,
+    FaCapsules,
+    FaNotesMedical,
+    FaHeartbeat,
+    FaTint,
+    FaPumpSoap,
+    FaLeaf,
 } from "react-icons/fa";
 
 function Categories() {
-  return (
-    <section className="categories">
+    return (
+        <section className="categories">
+            <h2>Shop by Category</h2>
 
-      <h2>Shop by Category</h2>
-      <p className="categories-subtitle">
-  Browse medicines and healthcare essentials by category.
-</p>
+            <p className="categories-subtitle">
+                Browse medicines and healthcare essentials by category.
+            </p>
 
-      <div className="category-grid">
+            <div className="category-grid">
 
-<div className="category-card pain">
-  <FaCapsules className="category-icon" />
+                <div className="category-card pain">
+                    <FaCapsules className="category-icon" />
 
-  <h3>Pain Relief</h3>
+                    <h3>Pain Relief</h3>
 
-  <p>200+ Products</p>
+                    <p>200+ Products</p>
 
-  <span>Explore →</span>
-</div>
+                    <span>Explore →</span>
+                </div>
 
- <div className="category-card cold">
-  <FaNotesMedical className="category-icon" />
+                <div className="category-card cold">
+                    <FaNotesMedical className="category-icon" />
 
-  <h3>Cold & Flu</h3>
+                    <h3>Cold & Flu</h3>
 
-  <p>150+ Products</p>
+                    <p>150+ Products</p>
 
-  <span>Explore →</span>
-</div>
+                    <span>Explore →</span>
+                </div>
 
-        <div className="category-card heart">
-  <FaHeartbeat className="category-icon" />
+                <div className="category-card heart">
+                    <FaHeartbeat className="category-icon" />
 
-  <h3>Heart Care</h3>
+                    <h3>Heart Care</h3>
 
-  <p>120+ Products</p>
+                    <p>120+ Products</p>
 
-  <span>Explore →</span>
-</div>
-        <div className="category-card diabetes">
-  <FaTint className="category-icon" />
+                    <span>Explore →</span>
+                </div>
 
-  <h3>Diabetes</h3>
+                <div className="category-card diabetes">
+                    <FaTint className="category-icon" />
 
-  <p>180+ Products</p>
+                    <h3>Diabetes</h3>
 
-  <span>Explore →</span>
-</div>
+                    <p>180+ Products</p>
 
-        <div className="category-card skin">
-  <FaPumpSoap className="category-icon" />
+                    <span>Explore →</span>
+                </div>
 
-  <h3>Skin Care</h3>
+                <div className="category-card skin">
+                    <FaPumpSoap className="category-icon" />
 
-  <p>220+ Products</p>
+                    <h3>Skin Care</h3>
 
-  <span>Explore →</span>
-</div>
+                    <p>220+ Products</p>
 
-        <div className="category-card vitamin">
-  <FaLeaf className="category-icon" />
+                    <span>Explore →</span>
+                </div>
 
-  <h3>Vitamins</h3>
+                <div className="category-card vitamin">
+                    <FaLeaf className="category-icon" />
 
-  <p>300+ Products</p>
+                    <h3>Vitamins</h3>
 
-  <span>Explore →</span>
-</div>
+                    <p>300+ Products</p>
 
-      </div>
+                    <span>Explore →</span>
+                </div>
 
-    </section>
-  );
+            </div>
+        </section>
+    );
 }
 
 export default Categories;

@@ -1,19 +1,26 @@
-.hero{
-    height:80vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    background:transparent;
+/* Hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 80vh;
+
+    background: transparent;
 }
 
-.hero h1{
-    font-size:60px;
-    color:#2563eb;
+/* Hero Content */
+
+.hero h1 {
+    font-size: 60px;
+    color: #2563EB;
 }
 
-.hero p{
-    margin-top:20px;
-    font-size:22px;
-    color:#555;
+.hero p {
+    margin-top: 20px;
+
+    font-size: 22px;
+    color: #555;
 }

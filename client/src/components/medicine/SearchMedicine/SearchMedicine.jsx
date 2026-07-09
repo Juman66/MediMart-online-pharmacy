@@ -1,24 +1,28 @@
 import "./SearchMedicine.css";
 
 function SearchMedicine() {
-  return (
-    <section className="search-medicine">
+    return (
+        <section className="search-medicine">
 
-      <h1>Find Medicines</h1>
+            <h1>Find Medicines</h1>
 
-      <div className="search-box">
+            {/* Search Box */}
 
-        <input
-          type="text"
-          placeholder="Search medicines..."
-        />
+            <div className="search-box">
 
-        <button>Search</button>
+                <input
+                    type="text"
+                    placeholder="Search medicines..."
+                />
 
-      </div>
+                <button>
+                    Search
+                </button>
 
-    </section>
-  );
+            </div>
+
+        </section>
+    );
 }
 
 export default SearchMedicine;

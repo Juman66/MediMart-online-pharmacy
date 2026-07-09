@@ -1,17 +1,17 @@
 import "./Footer.css";
 
 function Footer() {
-  return (
-    <footer className="footer">
+    return (
+        <footer className="footer">
 
-      <h2>MediMart</h2>
+            <h2>MediMart</h2>
 
-      <p>Your Trusted Online Pharmacy</p>
+            <p>Your Trusted Online Pharmacy</p>
 
-      <p>© 2026 MediMart. All Rights Reserved.</p>
+            <p>© 2026 MediMart. All Rights Reserved.</p>
 
-    </footer>
-  );
+        </footer>
+    );
 }
 
 export default Footer;

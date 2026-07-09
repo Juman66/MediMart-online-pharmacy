@@ -1,50 +1,50 @@
-:root{
+:root {
 
-/* Colors */
+    /* Brand Colors */
 
---primary:#006D77;
---primary-light:#0D8B97;
+    --primary: #0F6CBD;
+    --primary-light: #3B82F6;
+    --secondary: #14B8A6;
+    --accent: #10B981;
+    --highlight: #F59E0B;
+    --danger: #EF4444;
 
---secondary:#83C5BE;
+    --dark: #1E293B;
+    --text: #64748B;
+    --white: #FFFFFF;
 
---accent:#FFDDD2;
+    /* Background Colors */
 
---highlight:#E29578;
-
---dark:#1F2937;
-
---text:#475569;
-
---white:#ffffff;
---bg-one:linear-gradient(
-135deg,
-#34D399,
-#14B8A6,
-#22D3EE,
-#A5F3FC
+--bg-one: linear-gradient(
+    135deg,
+    #E0F2FE,
+    #BAE6FD,
+    #D1FAE5,
+    #F8FAFC
 );
+    --bg-two: #F8FAFC;
+    --bg-three: #EFF6FF;
+    --bg-four: #ECFEFF;
 
---bg-two:#F7FCFC;
+    --card-bg: #FFFFFF;
 
---bg-three:#EDF8F8;
+    /* Borders */
 
---bg-four:#F3FAF8;
+    --border: #E2E8F0;
+    --border-light: #F1F5F9;
 
+    /* Border Radius */
 
-/* Radius */
+    --radius: 20px;
 
---radius:22px;
+    /* Shadows */
 
+    --shadow: 0 10px 30px rgba(15, 108, 189, .12);
 
-/* Shadow */
+    --shadow-hover: 0 18px 40px rgba(15, 108, 189, .18);
 
---shadow:
+    /* Transition */
 
-0 18px 45px rgba(0,0,0,.08);
-
-
-/* Transition */
-
---transition:.35s ease;
+    --transition: .3s ease;
 
 }

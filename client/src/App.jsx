@@ -9,25 +9,46 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 function App() {
-  return (
-    <Routes>
+    return (
+        <Routes>
 
-      <Route path="/" element={<Home />} />
+            <Route
+                path="/"
+                element={<Home />}
+            />
 
-      <Route path="/medicines" element={<Medicines />} />
+            <Route
+                path="/medicines"
+                element={<Medicines />}
+            />
 
-      <Route path="/login" element={<Login />} />
+            <Route
+                path="/login"
+                element={<Login />}
+            />
 
-      <Route path="/register" element={<Register />} />
+            <Route
+                path="/register"
+                element={<Register />}
+            />
 
-      <Route path="/cart" element={<Cart />} />
+            <Route
+                path="/cart"
+                element={<Cart />}
+            />
 
-      <Route path="/about" element={<About />} />
+            <Route
+                path="/about"
+                element={<About />}
+            />
 
-      <Route path="/contact" element={<Contact />} />
+            <Route
+                path="/contact"
+                element={<Contact />}
+            />
 
-    </Routes>
-  );
+        </Routes>
+    );
 }
 
 export default App;
